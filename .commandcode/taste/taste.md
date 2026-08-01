@@ -1,0 +1,2 @@
+- Wants projects to include a README.md documenting project details (structure, exercise/lab overview, and how to run things). Confidence: 0.6
+- Wants the README placed at the repository root (not nested in a subfolder) so GitHub renders it on the repo's landing page for visitors. Confidence: 0.8
