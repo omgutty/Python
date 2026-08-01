@@ -1,2 +1,4 @@
 - Wants projects to include a README.md documenting project details (structure, exercise/lab overview, and how to run things). Confidence: 0.6
 - Wants the README placed at the repository root (not nested in a subfolder) so GitHub renders it on the repo's landing page for visitors. Confidence: 0.8
+- When asked "what is wrong / why" about code while learning, wants detailed educational explanations (concept breakdown, why it fails, key takeaways) rather than a quick fix. Confidence: 0.7
+- Does not want files modified without explicit approval — explain first, then ask before changing anything. Confidence: 0.8
