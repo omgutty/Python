@@ -14,3 +14,4 @@ print("om", "gutty", sep='$$', end="^^")
 # sep will be separated with defined string between the mentioned string
 print(123,567, sep=000,end=000);
 
+
