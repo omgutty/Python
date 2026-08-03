@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(python -m pip list 2 >& 1)",
+      "Shell(more:*)",
+      "Shell(python -m pip install pytest playwright pytest-playwright)",
+      "Shell(uv:*)",
+      "Shell(findstr:*)",
+      "Shell(if:*)",
+      "Shell(else:*)"
+    ],
+    "deny": [],
+    "defaultMode": "default"
+  }
+}
