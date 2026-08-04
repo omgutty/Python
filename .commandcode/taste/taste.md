@@ -4,6 +4,8 @@
 - Wants the README placed at the repository root (not nested in a subfolder) so GitHub renders it on the repo's landing page for visitors. Confidence: 0.8
 - Prefers environment/dependency fixes over editing source files — keeps auto-generated scripts (e.g., Playwright MCP test files) untouched and only fixes the environment (venv, package/browser installs). Confidence: 0.6
 - When asked "what is wrong / why" about code while learning, wants detailed educational explanations (concept breakdown, why it fails, key takeaways) rather than a quick fix. Confidence: 0.95
+- When learning a concept, wants a concrete example for each part (e.g., one example per `print()` parameter: values, sep, end, file, flush) and ideally one combined example using all parts together — example-driven teaching rather than theory alone. Confidence: 0.7
+- Is learning Python specifically to build agents; appreciates when explanations tie concepts to agent-building use cases (e.g., `print(..., file=f, flush=True)` framed as real-time agent logging). Confidence: 0.5
 - Does not want files modified without explicit approval — explain first, then ask before changing anything (explicitly says "do not change" when asking for diagnosis). Confidence: 0.95
 - When debugging, prefers to be told what to change so they can understand and apply the fix themselves, rather than the agent editing the file directly ("just tell me what to change, I will first understand and update"); then applies the fix and asks the agent to review ("i have modified, can you check code now"). Confidence: 0.7
 - Uses VS Code as their IDE (references the Ctrl+Shift+P → "Python: Select Interpreter" workflow). Confidence: 0.6
