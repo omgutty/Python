@@ -68,6 +68,19 @@ print(_) # 12
 
 ## Identifier roles 
 
+#multi comment 
+
+"""
+hi 
+hello 
+namasty 
+
+"""
 
 
+
+# how to take input 
+
+name= input("enter your name :")
+print("hello ", name);
 
