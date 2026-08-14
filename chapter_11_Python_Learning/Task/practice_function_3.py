@@ -5,3 +5,9 @@ def gree():
 
 
 gree()
+
+
+def sayhello (name= "om"):
+    print("hello ",name.upper())
+
+sayhello ("raju")
