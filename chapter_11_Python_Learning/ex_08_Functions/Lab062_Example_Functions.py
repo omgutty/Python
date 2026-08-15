@@ -1,3 +1,4 @@
+# This program defines a function once and then calls it many times.
 # Type 1 - No return type and no parameters. 
 
 

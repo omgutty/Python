@@ -1,6 +1,12 @@
+# This program shows the pass statement inside a loop.
+# pass means "do nothing here" - it is a placeholder that does nothing.
+
+# Loop through the numbers 0 to 9.
 for i in range(0, 10, 1):
+    # Print only 5 and 6.
     if i == 6 or i == 5:
         print(i)
+    # For all other numbers, pass does nothing (empty placeholder).
     else:
         pass # do nothing
 

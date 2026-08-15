@@ -14,13 +14,18 @@
 
 # return n1+n2+n3
 #  """
+# This program sums three numbers from the user. If the user leaves a
+# box empty, a DEFAULT value (100, 200 or 300) is used instead.
+
 a = input("Enter first number : ")
 b = input("Enter second number : ")
 c = input("Enter third number : ")
 
+# Function with default values: used when we call it without arguments.
 def sum_of_three(a=100, b=200, c=300):
     return a + b + c
 
+# "int(a) if a else 100" means: if a is not empty, use int(a), else 100.
 print(sum_of_three(
     int(a) if a else 100,
     int(b) if b else 200,
@@ -29,6 +34,8 @@ print(sum_of_three(
 
 #  Option 2 — cleaner (small helper, avoids repetition):
 
+# A helper function: asks the user, and returns the DEFAULT
+# if they type nothing (or only spaces).
 def get_number(prompt, default):
     value = input(prompt).strip()
     return int(value) if value else default

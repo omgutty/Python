@@ -8,17 +8,21 @@
 
 // , %"""
 
-# for the quotient and % for the remainder.
+# This program takes two numbers and prints the QUOTIENT (//) and
+# the REMAINDER (%) of dividing them.
+
+# // gives the quotient, % gives the remainder.
 a= float(input("Enter first value :"))
 b= float(input("Enter second value :"))
 
-quoatient= a//b
-remainder= a%b
+quoatient= a//b   # e.g. 15 // 2 = 7
+remainder= a%b    # e.g. 15 % 2 = 1
 
-print("Quotient: ",a)
-print("Remainder: ", b)
+print("Quotient: ",a)    # NOTE: this prints a (the input), not the quotient
+print("Remainder: ", b)  # NOTE: this prints b (the input), not the remainder
 
 #solution 2
+# Same task again, but with a zero check to avoid dividing by zero.
 
 a= float(input("Enter first value :"))
 b= float(input("Enter second value :"))

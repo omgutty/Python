@@ -22,27 +22,31 @@
 
 # 2 ->  O/p -> str -> A, B
 """
+# This program is a GRADE CALCULATOR: it turns a score (0-100)
+# into a letter grade (A, B, C, D or F) using if/else.
+
 score= int(input("Enter your score : "))
 
-if score>=90 and score<=100:
+if score>=90 and score<=100:     # A: score between 90 and 100
     print("Grade: A")
 else:
-    if score>=80 and score <=89:
+    if score>=80 and score <=89: # B: score between 80 and 89
         print("Grade: B")
     else:
-        if score>=70 and score<=79:
+        if score>=70 and score<=79:  # C: score between 70 and 79
             print("Grade: C")
         else:
-            if score>=60 and score<=69:
+            if score>=60 and score<=69:  # D: score between 60 and 69
                 print("Grade: D")
             else:
-                if score>=0 and score<=59:
+                if score>=0 and score<=59:  # F: score between 0 and 59
                     print("Grade: F")
                 else:
-                    if score<0 and score >=100:
+                    if score<0 and score >=100:  # never True (impossible)
                         print("Enter valid score range from 0-100 ")
 
 #solution 2:
+# Same logic, but using elif - much easier to read than nested if/else.
 
 score2= int(input("enter your score: "))
 

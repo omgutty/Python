@@ -1,9 +1,13 @@
 
+# This program practises Python KEYWORDS (reserved words) and the
+# print() function options (sep, end, file, flush).
+
 import keyword
 
 # mport tell python to load module 
 # key word is build in python module 
 
+# keyword.kwlist is the list of ALL reserved words in Python.
 print(keyword.kwlist)
 
 ## these are reserver keywords
