@@ -22,7 +22,7 @@ chapter_11_Python_Learning/
 ├── ex_12_Lambda_Exp/                     # Lambda expressions
 ├── ex_13_LIST/                           # Lists and methods (pop, ...)
 ├── ex_14_Tuple/                          # Tuples
-├── Task/                                 # Daily challenge tasks (calculator, grade, quotient/remainder)
+├── Task/                                 # Daily challenge tasks & practice (calculator, grade, loops, lambda, decorators, sets)
 └── autoweave/                            # Playwright browser-automation tests (UI testing)
 ```
 
@@ -176,16 +176,26 @@ chapter_11_Python_Learning/
 | `Lab100_Tuple.py` | Tuple practice |
 | `Lab101.py` | Tuple practice |
 
-### Task (Daily Challenges)
+### Task (Daily Challenges & Practice)
 | File | Topic |
 |------|-------|
 | `task1.py` | 3-number calculator (add, sub, mul, div) |
 | `task2.py` | Quotient and remainder (`//`, `%`) |
 | `task3.py` | Grade calculator (A–F) |
+| `task4.py` | Sum of 3 numbers with default values (100, 200, 300) |
 | `task.py` | Empty task template |
-| `Practice_1.py` | Practice file |
+| `Practice_1.py` | `print()` practice (`sep`, `end`) |
 | `Practice_Keyword.py` | Keywords and `print()` full signature |
+| `Practice_conditions.py` | Conditions practice: `if/else` + `match-case` |
+| `practice_operators.py` | Operators practice |
+| `practice_loop.py` | `for`/`while` loops, `range()`, even numbers |
+| `practice_function.py` | Functions practice |
+| `practice_function_2.py` | Functions practice |
+| `practice_function_3.py` | Functions with default parameters |
+| `set_map.py` | Sets, `filter()` vs `map()` |
 | `variable.py` | Variables, complex numbers, type juggling |
+| `decorator.py` | Decorators - wrapper, `@` syntax, chaining |
+| `lambda.py` | Lambda expressions vs regular functions |
 
 ### autoweave (Playwright Browser Automation)
 | File | Topic |
