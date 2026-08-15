@@ -1,5 +1,5 @@
 - Wants generated/working folders (e.g., the `autoweave` folder) added to `.gitignore` so they are not pushed to GitHub — keeps the repo clean of auto-generated/scratch content. Confidence: 0.6
-- Wants projects to include a README.md documenting project details (structure, exercise/lab overview, and how to run things). Confidence: 0.8
+- Wants projects to include a README.md documenting project details (structure, exercise/lab overview, and how to run things) — and explicitly asks for the README to be updated in the same pass when bulk-editing the practice folder ("update the reademe file as well" when commenting all ex_* labs), keeping docs in sync with the code. Confidence: 0.85
 - Wants READMEs in subproject folders too (e.g., a test folder like `autoweave`), with proper step-by-step setup and run instructions for upcoming/recurring work in that folder. Confidence: 0.7
 - Wants READMEs to also document the exact environment configuration steps performed ("how Python was configured"), including venv creation, dependency/browser installs, and IDE interpreter selection (VS Code Ctrl+Shift+P → "Python: Select Interpreter"), so the setup is reproducible and verifiable. Confidence: 0.7
 - Wants the README placed at the repository root (not nested in a subfolder) so GitHub renders it on the repo's landing page for visitors. Confidence: 0.8
@@ -24,3 +24,4 @@
 - Before deleting or cleaning up redundant config (e.g., a subfolder `.vscode/settings.json`), asks consequence-checking questions to confirm existing workflows (like Code Runner running labs in that folder) will keep working — wants assurance before removing anything. Confidence: 0.6
 - Wants the agent to verify config changes/cleanups by actually running the code afterwards (e.g., after deleting a redundant `.vscode` folder, run the lab with the exact command Code Runner would use) to confirm the fix works — not just report that the change was made. Confidence: 0.5
 to confirm the fix works — not just report that the change was made. Confidence: 0.5
+he fix works — not just report that the change was made. Confidence: 0.5
