@@ -1,6 +1,6 @@
 student_infor = {
     "name": "Pramod",
-    # "age": 65,
+     "age": 65,
     "age": 67,
     "address": "KA"
 }

@@ -48,3 +48,36 @@ print(b-a)
 
 print(b.difference(a))
 #{6, 7}
+######################################
+
+sq= {x+2 for x in range(5)}
+print(sq)
+
+
+######################################
+"""# Find the all non repeating character in a string 
+
+Example: 
+Input : swiss -> s - 3, w = 0, i = 0
+
+Output : w i"""
+
+ # ---- Approach 1 : Set based (fits this file's theme) ----
+    # Idea: while walking the string, remember every character we have seen.
+    # If we ever see a character a second time, mark it as "repeated".
+    # At the end: non-repeating = seen - repeated (same set difference
+    # as a - b earlier in this file, lines 41-44).
+
+text = input("Enter word: ")
+
+seen = set()        # every character we have come across
+repeated = set()    # characters that appeared more than once
+
+for ch in text:
+    if ch in seen:      # already saw it before -> it repeats
+        repeated.add(ch)
+    seen.add(ch)        # always remember this character
+
+non_repeating = seen - repeated   # seen minus repeated -> appears exactly once
+print("Approach 1 (sets):", non_repeating)   # {'w', 'i'} (order not guaranteed)
+
