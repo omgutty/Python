@@ -14,6 +14,7 @@
 # print(set(t))
 
 # mixed = {1, "QA", False, 3.5}
+
 mixed = {1, "QA", True, 3.5}
 # print(mixed)
 
