@@ -1,3 +1,12 @@
+# 164.py
+# Topic: try / except - real-world (HTTP request)
+#
+# requests.get() can fail in many ways: wrong URL (ConnectionError),
+# slow server (Timeout), or anything else. Each is caught separately.
+# The last "except Exception as e" is a SAFETY NET for anything not
+# listed - and prints the actual error message.
+# NOTE: needs `pip install requests` first.
+
 import requests
 
 try:

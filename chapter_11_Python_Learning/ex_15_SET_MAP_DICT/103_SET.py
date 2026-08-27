@@ -1,6 +1,19 @@
-# # SET
-# # Collection of Unique
-# # {} - parenthesis
+# 103_SET.py
+# Topic: Sets - full tour (dedupe, creation, methods, operators)
+#
+# A SET is a collection of UNIQUE items written with {}.
+#   - removes duplicates automatically
+#   - unordered -> no indexing like a list
+#   - created from any iterable with set(...)
+# Common operations:
+#   add() / remove()        -> change the set
+#   |  / union()            -> combine (all items)
+#   &  / intersection()     -> items in BOTH
+#   -  / difference()       -> items in ONE but not the other
+#
+# SET
+# Collection of Unique
+# {} - parenthesis
 
 # list_of_unique_items = {1, 2, 3, 4, 4, 5, 5}
 # print(list_of_unique_items)

@@ -1,3 +1,11 @@
+# 152_REAL_Exmaple.py
+# Topic: Static methods - real-world reusable readers
+#
+# ExcelReader and MYSQLDBConnection expose STATIC methods, so any
+# test class can call them WITHOUT creating an object. TC1 and TC2
+# reuse the exact same reader code - write once, call anywhere.
+# This is the "utility" pattern: no state, just behaviour.
+
 class ExcelReader:
     @staticmethod
     def readExcelFile():
@@ -13,7 +21,7 @@ class MYSQLDBConnection:
 class TC1:
 
     def runTC(self):
-        ExcelReader.readExcelFile()
+        ExcelReader.readExcelFile()           # static call, no object
         MYSQLDBConnection.readMySQLFile()
         print("Hi")
 

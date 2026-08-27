@@ -1,3 +1,11 @@
+# 142_MO.py
+# Topic: Method overriding - one base, many behaviours
+#
+# BaseTest.run() is overridden in BOTH children with different output.
+# This is polymorphism: the SAME call (t.run()) behaves differently
+# depending on the OBJECT's type.
+# Try each of the three object types by uncommenting.
+
 class TestSuite:
     def info(self):
         print("Test suite information")
@@ -18,7 +26,7 @@ class APITest(BaseTest):
         print("API test execution")
 
 
-# t = LoginTest()
-# t = APITest()
-t = BaseTest()
+# t = LoginTest()   # -> Login test execution
+# t = APITest()     # -> API test execution
+t = BaseTest()      # -> Base test execution
 t.run()
