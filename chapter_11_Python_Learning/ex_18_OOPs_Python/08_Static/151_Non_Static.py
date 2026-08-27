@@ -12,4 +12,4 @@ class MathOperation:
 t = MathOperation()
 print(t.div(10, 10))
 
-print(MathOperation.sum(10, 10))
+print(MathOperation.sum(10, 10))    
