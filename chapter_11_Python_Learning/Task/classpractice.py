@@ -9,9 +9,7 @@ class wife:
         print("I can alk")
 
     def fight(self):
-        print("I can fight"
-
-          )
+        print("I can fight")
 
 def goout():
     print("can goout with intimation")
@@ -20,4 +18,4 @@ gow= wife()
 
 
 print(gow.age)
-print(gow.talk())
+gow.talk()
