@@ -1,10 +1,3 @@
-# 132_Ecap_NICE.py
-# Topic: Encapsulation + env variables (the "NICE" way)
-#
-# Improvement over 131: the real credentials are NOT hard-coded in the file.
-# They live in a .env file, loaded with dotenv.
-# The class encapsulates: validation logic + credential lookup.
-
 from dotenv import load_dotenv  # reads variables from a .env file
 import os                       # gives access to environment variables
 from pathlib import Path        # lets us build a script-relative path
@@ -15,7 +8,7 @@ class VWOLoginPage:
     def __init__(self, email_arg, password_arg):
         # user input stored on the object
         self.email = email_arg
-        self.password = password_arg
+        self.password = password_arg1
 
     def login_confirm(self):
         load_dotenv(Path(__file__).parent / ".env")  # load .env next to this script

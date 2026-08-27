@@ -20,6 +20,8 @@ class Car:
 
 object_ref = Car()
 print(object_ref.public_pramod)  # ✅ public - prints "pramod"
+print(object_ref._protected_baby)
+#print(object_ref.__private_baby)
 
 object_ref.nany()  # creates the private attribute on the object
 
