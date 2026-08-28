@@ -176,6 +176,49 @@ python chapter_11_Python_Learning\ex_18_OOPs_Python\09_Exceptions\160.py
 
 Some labs prompt for input (`input()`) - type your values and press Enter. A few dotenv labs read a `.env` file next to the script (`VWO_USERNAME` / `VWO_PASSWORD` style credentials).
 
+### Activating the virtual environment (all three options)
+
+The project uses a virtual environment at `chapter_11_Python_Learning/.venv`. Once activated, `python` and `pytest` resolve to the venv's versions (no need to type the full path). Choose the command for YOUR shell:
+
+**Option 1 — PowerShell** (your default terminal):
+
+```powershell
+.\chapter_11_Python_Learning\.venv\Scripts\Activate.ps1
+```
+
+- After activation your prompt shows `(.venv)` at the start.
+- If PowerShell blocks it with *"running scripts is disabled on this system"*, allow scripts for your user once, then activate again:
+  ```powershell
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+  .\chapter_11_Python_Learning\.venv\Scripts\Activate.ps1
+  ```
+
+**Option 2 — Command Prompt (cmd):**
+
+```cmd
+chapter_11_Python_Learning\.venv\Scripts\activate.bat
+```
+
+**Option 3 — Git Bash / sh (Unix-style):**
+
+```bash
+source chapter_11_Python_Learning/.venv/Scripts/activate
+```
+
+**How to check it worked:** your prompt should show `(.venv)`, and `python --version` / `pytest --version` should report the venv's Python 3.11.15 instead of the Windows Store stub.
+
+**Important caveat:** on this machine `python` and `pip` are NOT on PATH by default (they are the Microsoft Store stubs). So even after activation the safest, most reliable way to run anything is through the venv's interpreter directly — no activation needed:
+
+```powershell
+# run a lab
+& .\chapter_11_Python_Learning\.venv\Scripts\python.exe chapter_11_Python_Learning\ex_18_OOPs_Python\01_Class_Object\120_Class.py
+
+# run pytest
+& .\chapter_11_Python_Learning\.venv\Scripts\python.exe -m pytest chapter_11_Python_Learning\ex_21_PyTest\test_180.py
+```
+
+`python -m pytest` is preferred over a bare `pytest` command: it always uses the interpreter you chose, regardless of PATH.
+
 ### Running the tests
 
 ```powershell
